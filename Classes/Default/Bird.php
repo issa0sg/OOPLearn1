@@ -5,7 +5,10 @@ include_once "Classes/Abstract/Animal.php";
 class Bird extends Animal implements Sound, Fly
 {
 
-    
+    public static function who()
+    {
+        return __CLASS__;
+    }
 
     protected int $wingSize;
 

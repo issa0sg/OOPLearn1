@@ -5,6 +5,11 @@ include_once "Classes/Abstract/Animal.php";
 class Dog extends Animal implements Sound,Runnable
 {
 
+    public static function who()
+    {
+        return __CLASS__;
+    }
+
     protected int $tailSize;
 
     public function __construct(string $name,int $tailSize) {

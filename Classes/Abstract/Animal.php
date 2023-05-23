@@ -8,7 +8,12 @@ abstract class Animal{
 
     public static function doSomeThingAnimal()
     {
-        echo "Нассал насрал и ушел";
+        echo (static::who() . " нассал насрал и ушел");
+    }
+
+    public static function who()
+    {
+        return __CLASS__;
     }
     
     protected $name;
