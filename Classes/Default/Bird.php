@@ -2,8 +2,10 @@
 
 include_once "Classes/Abstract/Animal.php";
 
-class Bird extends Animal implements Sound//, Fly
+class Bird extends Animal implements Sound, Fly
 {
+
+    
 
     protected int $wingSize;
 

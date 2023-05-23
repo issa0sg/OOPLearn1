@@ -6,6 +6,11 @@ include_once "Interfaces/Fly.php";
 
 abstract class Animal{
 
+    public static function doSomeThingAnimal()
+    {
+        echo "Нассал насрал и ушел";
+    }
+    
     protected $name;
 
     public function __construct(string $name) {

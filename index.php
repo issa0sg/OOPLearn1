@@ -20,5 +20,11 @@ function beAnimal(Sound $animal)
     echo '<br>';
 }
 
+Dog::doSomeThingAnimal();
+echo '<br>';
+Bird::doSomeThingAnimal();
+echo '<br>';
+
+
 beAnimal($dog1);
 beAnimal($bird1);
